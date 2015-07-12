@@ -1,0 +1,29 @@
+{
+  "name": "your-script",
+  "version": "0.0.1",
+  "description": "Module, allows you to create your own subset of JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamfrontender/your-script.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "subset",
+    "custom",
+    "keywords"
+  ],
+  "dependencies": {
+    "keywords-provider": "*",
+    "esprima-custom-keywords": "*"
+  },
+  "author": "iamfrontender",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iamfrontender/your-script/issues"
+  },
+  "homepage": "https://github.com/iamfrontender/your-script"
+}
