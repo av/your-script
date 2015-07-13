@@ -13,7 +13,7 @@ This module is distributed via npm, run `npm i your-script` just where you need 
 var yourScript = require('your-script');
 var yoscript = new yourScript();
 
-yoscript.parse('var barrio = 'foorio';')
+yoscript.parse('var barrio = foorio;');
 ```
 
 And if you'll log the result of this operation, you'll see... No difference :) 
