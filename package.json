@@ -1,6 +1,6 @@
 {
   "name": "your-script",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Module, allows you to create your own subset of JavaScript",
   "main": "index.js",
   "scripts": {
