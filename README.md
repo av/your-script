@@ -30,8 +30,8 @@ so create a folder somewhere, and put there `javascript.lex`
 ```javascript
 var translator = new yourScript({
   lexemsFolder: './per/some/folder/ad/lexems'
-  sourceSubset: 'javascript.lex',
-  destinationSubset: 'somescript.lex'
+  sourceSubset: 'javascript',
+  destinationSubset: 'somescript'
 });
 ```
 
