@@ -86,8 +86,9 @@ var kitty = new Kitty(); if (kitty.isHungry()) {kitty.feed()}
                             ||
                            \||/
                             \/
-meow kitty = MEW Kitty(); meeow (kitty.isHungry()) {kitty.feed()}`
+meow kitty = MEW Kitty(); meeow (kitty.isHungry()) {kitty.feed()}
 
+```
 * Have fun :)
 
 ## YourScript object interface:
