@@ -22,11 +22,9 @@ between `javascript.lex` and `yourscript.lex` by default.
 So, the easiest way to change keywords is just edit `yourscript.lex`
 in the way you like it and than translate everything from end to end.
 
-This module contains sample lexem files for:
-* geoscript
-* meowscript
-
-Dialects.
+This module is bundled with some dialects inside:
+* geoscript — keywords are random places on earth
+* meowscript — 50 shades of meow
 
 #### True way:
 This module assumed to be used for creating custom `.lex` definitions,
