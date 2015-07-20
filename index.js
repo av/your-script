@@ -45,8 +45,8 @@ function replace(s, start, end, substitute) {
  *
  * @param {Object} config
  *   @config {String} lexemsFolder Path to lookup for keywords
- *   @config {String} sourceSubset Subset to parse from
- *   @config {String} destinationSubset Subset to parse to
+ *   @config {String} from Subset to parse from
+ *   @config {String} to Subset to parse to
  * @constructor
  */
 function YourScript(config) {
@@ -63,13 +63,13 @@ YourScript.prototype = {
      *
      * @param {Object} config
      *   @config {String} lexemsFolder Path to lookup for keywords
-     *   @config {String} sourceSubset Subset to parse from
-     *   @config {String} destinationSubset Subset to parse to
+     *   @config {String} from Subset to parse from
+     *   @config {String} to Subset to parse to
      */
     applyConfig: function(config) {
         this.lexemsFolder = config.lexemsFolder || path.join(moduleDir, 'lexems');
-        this.sourceSubset = config.sourceSubset || 'javascript';
-        this.destinationSubset = config.destinationSubset || 'yourscript';
+        this.sourceSubset = config.from || 'javascript';
+        this.destinationSubset = config.to || 'yourscript';
 
         lexems = new keywordsProvider({
             folder: this.lexemsFolder
@@ -81,8 +81,8 @@ YourScript.prototype = {
      *
      * @param {String} string Source to parse
      * @param {Object} options
-     *   @config {String} sourceSubset Subset to parse from
-     *   @config {String} destinationSubset Subset to parse to
+     *   @config {String} from Subset to parse from
+     *   @config {String} to Subset to parse to
      * @returns {String} translated source
      */
     parse: function (string, options) {
@@ -90,8 +90,8 @@ YourScript.prototype = {
         string = String(string);
         options = options || {};
 
-        this.sourceSubset = options.sourceSubset || this.sourceSubset || 'javascript';
-        this.destinationSubset = options.destinationSubset || this.destinationSubset || 'yourscript';
+        this.sourceSubset = options.from || this.sourceSubset || 'javascript';
+        this.destinationSubset = options.from || this.destinationSubset || 'yourscript';
 
         this.sourceKeywords = lexems.getKeywords(this.sourceSubset);
         this.destinationKeywords = lexems.getKeywords(this.destinationSubset);
