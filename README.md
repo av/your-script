@@ -34,8 +34,8 @@ so create a folder somewhere, and put there `javascript.lex`
 ```javascript
 var translator = new yourScript({
   lexemsFolder: './per/some/folder/ad/lexems'
-  sourceSubset: 'javascript',
-  destinationSubset: 'somescript'
+  from: 'javascript',
+  to: 'somescript'
 });
 ```
 
@@ -53,8 +53,8 @@ and then...
 
 ```javascript
 translator.parse(sourceString, {
-  sourceSubset: 'subset you source written in'
-  destinationSubset 'subset to translate your source to'
+  from: 'subset you source written in'
+  to 'subset to translate your source to'
 });
 ```
 
@@ -80,7 +80,7 @@ FOR meowwr
 * 
 ```javascript
 meowScript = new translator({
-  destinationSubset: 'meowscript'
+  to: 'meowscript'
 });
 ```
 

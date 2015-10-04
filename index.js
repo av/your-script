@@ -91,7 +91,7 @@ YourScript.prototype = {
         options = options || {};
 
         this.sourceSubset = options.from || this.sourceSubset || 'javascript';
-        this.destinationSubset = options.from || this.destinationSubset || 'yourscript';
+        this.destinationSubset = options.to || this.destinationSubset || 'yourscript';
 
         this.sourceKeywords = lexems.getKeywords(this.sourceSubset);
         this.destinationKeywords = lexems.getKeywords(this.destinationSubset);
